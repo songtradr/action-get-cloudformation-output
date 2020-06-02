@@ -1,6 +1,6 @@
 # Get CloudFormation Outputs
 
-Given the export name of a CloudFormation output returns the value.
+Given the export name of a CloudFormation output, this action returns its value.
 
 ## Inputs
 
