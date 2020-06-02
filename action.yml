@@ -1,0 +1,19 @@
+name: "Get CloudFormation Outputs"
+description: "Get the value of a CloudFormation output by the export name."
+
+inputs:
+  export_name:
+    description: "CloudFormation output export name"
+    required: true
+  encode_base64:
+    description: "true|false Encode the output as base64, useful for complex structures"
+    required: false
+    default: "false"
+
+outputs:
+  value:
+    description: "Command result text."
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
